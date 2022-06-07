@@ -14,4 +14,6 @@ export interface User {
     inscritos: [];
     email: string;
     descricao: string;
+    data: string;
+    vagas: string;
 }

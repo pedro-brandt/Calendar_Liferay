@@ -6,6 +6,7 @@ import { UserService } from 'src/app/service/user.service';
 import { AlertModalService } from 'src/app/shared/alert-modal.service';
 import { User } from 'src/models/user.model';
 import { AuthService } from '../login/auth.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-inscritos',
@@ -28,12 +29,14 @@ export class InscritosComponent implements OnInit {
   dado: any[] = [];
   vagas: any[] = [];
   remove: any[] = [];
+  meuFormGroup: FormGroup;
 
   constructor(private service: UserService,
     private router: Router,
     private datePipe: DatePipe,
     private authService: AuthService,
-    private alertService: AlertModalService) { }
+    private alertService: AlertModalService,
+    private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
     this.retornarUsuario();
@@ -142,6 +145,36 @@ export class InscritosComponent implements OnInit {
       console.log(remove)
    this.router.navigate(['inscritos']);
 
+   this.meuFormGroup = this.formBuilder.group({
+    date: data.date,
+    categoria: data.categoria,
+    email: data.email,
+    end: data.end,
+    horarioFinal: data.horarioFinal,
+    horarioInicio: data.horarioInicio,
+    local: data.local,
+    nome: data.nome,
+    quantidade: data.quantidade,
+    start: data.start,
+    data: data.data,
+    inscritos: data.inscritos,
+    status: data.status,
+    id: data.id,
+    vagas: data.vagas
+  });
+console.log(this.meuFormGroup)
+this.service.update(this.meuFormGroup.value).subscribe(
+success  => {
+  this.alertService.showAlertSuccess('Excluido com sucesso!'),
+  this.router.navigate(['/criados']);
+
+},
+error => this.alertService.showAlertDanger('Erro ao remover, tente novamente!'),
+() => console.log('update completo')
+);
+
     });
+
+
   }
 }

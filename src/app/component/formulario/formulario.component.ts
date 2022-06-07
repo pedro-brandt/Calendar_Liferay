@@ -114,6 +114,7 @@ export class FormularioComponent implements OnInit {
       quantidade: data.quantidade,
       categoria: data.categoria,
       descricao: data.descricao,
+      inscritos: data.inscritos
     });
     console.log('update',this.meuFormGroup)
   }

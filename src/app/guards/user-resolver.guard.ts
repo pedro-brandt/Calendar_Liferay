@@ -33,6 +33,8 @@ export class UserResolverGuard implements Resolve<User> {
       inscritos: null,
       email: null,
       descricao:null,
+      vagas: null,
+      data: null
     });
   }
 }
