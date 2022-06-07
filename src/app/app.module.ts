@@ -28,8 +28,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { SharedModule } from './shared/shared.module';
 import { AuthService } from './component/login/auth.service';
 import { TokenInterceptor } from './service/interceptores/token.interceptor';
-import { MatSlideToggleModule} from '@angular/material/slide-toggle';
-import {MatIconModule} from '@angular/material/icon';
+
 FullCalendarModule.registerPlugins([
   dayGridPlugin,
   interactionPlugin,
@@ -63,9 +62,7 @@ FullCalendarModule.registerPlugins([
     NgxPaginationModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
-    SharedModule,
-    // MatSlideToggleModule,
-    // MatIconModule
+    SharedModule
   ],
   providers: [AuthService,
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }
