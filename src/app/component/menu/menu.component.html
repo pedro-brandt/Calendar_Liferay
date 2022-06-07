@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand static-top">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="../assets/img/Liferay_Logo_Full_Color-Digital (1).svg" id="logo" alt="logo">
+    </a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button> -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/feed-eventos" routerLinkActive="selected">FEED DE EVENTOS</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/calendario" routerLinkActive="selected" class="nav-link">CRIAR EVENTOS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLinkActive="selected" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-expanded="false">
+            MEUS EVENTOS </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+            <li><a class="dropdown-item" routerLink="/inscritos">INSCRITOS</a></li>
+            <li><a class="dropdown-item" routerLink="/criados" >CRIADOS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-perfil">
+      <li class="dropdown">
+        <a class="nav-link" id="profile" role="button" data-toggle="dropdown">
+          <img src="../assets/img/perfil.jpeg" id="perfil">
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="profile">
+          <!-- <li><a class="dropdown-item">Darkmode</a></li> -->
+          <li><a class="dropdown-item" (click)="logout()">SAIR</a><img id="seta" src="../../../assets/img/seta.png"></li>
+        </ul>
+      </li>
+    </div>
+  </div>
+</nav>

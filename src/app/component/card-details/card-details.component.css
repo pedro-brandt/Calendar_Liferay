@@ -1,0 +1,224 @@
+
+    .card-header{
+        align-items: center;
+        justify-content: center ;
+        display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+
+     .card{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 50%;
+        /* border: none; */
+        border: #13141d 2px solid !important;
+    border-radius: 7px !important;
+    }
+
+    .card-title{
+      background-color: #0B63CE !important;
+      color: white;
+      align-items: center;
+      justify-content: center ;
+      display: flex;
+      -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+      animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        width: 100%;
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .dv-descricao{
+      margin-left: 30px;
+      width: 50%;
+       flex-direction: column;
+   }
+
+
+   .dv-descricao1{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    padding-left: 8%;
+    width: 50%;
+ }
+
+   .divisao {
+    display: flex;
+    width: 100%;
+  }
+    .dv-d {
+        display: flex;
+    }
+p {
+  padding: 0px 10px 0px 10px;
+  font-size: 18px;
+  flex-wrap: nowrap;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+  .tracking-in-expand {
+    padding: 10px 0px 0px 0px;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+
+   @-webkit-keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+ .descricao {
+      margin: 20px 10px 10px 30px;
+      display: flex;
+      align-items: center;
+  }
+
+  h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+
+
+  .btn button {
+      font-weight: 600;
+      font-size: 20px;
+      width: 100%;
+      margin-bottom: 20px;
+      height: 50px;
+      background-color: #0B63CE
+  }
+
+  @media only screen and (max-width:992px) {
+
+    .dv-descricao{
+      margin-left: 10px;
+      /* width: 30%; */
+       flex-direction: column;
+   }
+
+
+   .dv-descricao1{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    padding-left: 8%;
+    /* width: 50%; */
+ }
+ p{
+   font-size: 16px;
+   padding: 0px 5px 0px 5px;
+ }
+
+ .descricao {
+  margin: 20px 10px 10px 5px;
+}
+
+
+h2{
+  font-size: 16px;
+  padding-bottom: 10px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+  }
+
+  @media only screen and (max-width:768px) {
+
+    .dv-descricao{
+      margin-left: 10px;
+      /* width: 50%; */
+       flex-direction: column;
+   }
+
+
+   .dv-descricao1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    /* width: 50%; */
+ }
+
+ p{
+  font-size: 12px;
+  padding: 0px 5px 0px 5px;
+}
+.descricao {
+  margin: 20px 10px 10px 5px;
+}
+   .card{
+        margin: 0 auto;
+        width: 60%;
+        border: #13141d 2px solid !important;
+    border-radius: 7px !important;
+    }
+
+  h2{
+    font-size: 12px;
+    padding-bottom: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  }
+
+  @media only screen and (max-width:600px) {
+
+    .dv-descricao{
+      margin-left: 10px;
+      /* width: 50%; */
+       flex-direction: column;
+   }
+
+
+   .dv-descricao1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    /* width: 50%; */
+ }
+
+ p{
+  font-size: 12px;
+  padding: 0px 5px 0px 5px;
+}
+.descricao {
+  margin: 20px 10px 10px 5px;
+}
+
+.card{
+  margin: 0 auto;
+  width: 80%;
+}
+
+h2{
+  font-size: 12px;
+  padding-bottom: 10px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+  }

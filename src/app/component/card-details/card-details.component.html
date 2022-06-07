@@ -1,0 +1,97 @@
+<app-menu></app-menu>
+<!-- <div>
+        <div class="card border-primary mb-3 card-dv">
+            <div class="card-header">
+                <h3 class="card-title">{{detalhes.nome}}</h3>
+            </div>
+            <div class="card-body">
+                <div class="dv-availability">
+                    <h4 class="card-vacancy">Vagas: 19/{{detalhes.quantidade}}</h4>
+                    <h5 class="category">{{detalhes.categoria}}</h5>
+                </div>
+                <div class="dv-status">
+                    <h6>{{detalhes.status}}</h6>
+                </div>
+                <div class="dv-date">
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span>
+                    <h4 class="card-date">{{detalhes.date}}</h4>
+                </div>
+                <div class="dv-time">
+                    <span class="material-symbols-outlined">
+                        schedule
+                    </span>
+                    <h4 class="card-time">{{detalhes.horarioInicio}}h às {{detalhes.horarioFinal}}h</h4>
+                </div>
+                <div class="dv-location">
+                    <span class="material-symbols-outlined">
+                        pin_drop
+                    </span>
+                    <h4 class="card-location">Evento na {{detalhes.local}}</h4>
+                </div>
+                <div class="dv-button">
+                    <button class="btn btn-primary btn-card" (click)="inscrever()">Inscrever-se</button>
+                </div>
+            </div>
+        </div>
+</div> -->
+
+<!--higo-->
+
+<div class="card">
+  <div class="card-title">
+    <h1 class="tracking-in-expand">{{detalhes.nome}}</h1>
+  </div>
+  <div class="divisao">
+    <div class="dv-descricao">
+      <div class="dv-d">
+        <span class="material-symbols-outlined">
+          group
+        </span>
+        <p>Vagas: {{detalhes.vagas}}/{{detalhes.quantidade}}</p>
+      </div>
+      <div class="dv-d">
+        <span class="material-symbols-outlined">
+          category
+        </span>
+        <p>{{detalhes.categoria}}</p>
+      </div>
+      <div class="dv-d">
+        <span class="material-symbols-outlined">
+          person
+        </span>
+        <p>{{detalhes.email}}</p>
+      </div>
+    </div>
+    <div class="dv-descricao1">
+      <div class="dv-d">
+        <span class="material-symbols-outlined">
+          calendar_month
+        </span>
+        <p>{{detalhes.data}}</p>
+      </div>
+      <div class="dv-d">
+        <span class="material-symbols-outlined">
+          schedule
+        </span>
+        <p>{{detalhes.horarioInicio}}h às {{detalhes.horarioFinal}}h</p>
+      </div>
+      <div class="dv-d">
+        <span class="material-symbols-outlined">
+          pin_drop
+        </span>
+        <p>Evento na {{detalhes.local}}</p>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="descricao">
+    <h2>Descrição do evento:</h2>
+    <p>{{detalhes.descricao}}</p>
+  </div>
+  <div class="btn">
+    <button class="jello-horizontal btn btn-primary" (click)="inscrever()">Inscrever-se</button>
+  </div>
+</div>

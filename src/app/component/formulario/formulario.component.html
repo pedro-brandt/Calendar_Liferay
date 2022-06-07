@@ -1,0 +1,128 @@
+<app-menu></app-menu>
+<div class="container-fluid">
+    <form class="form-group" [formGroup] = "meuFormGroup">
+        <div class="mb-3">
+          <label for="name-event" class="form-label">Nome do Evento : </label>
+          <input class="form-control form-control" id="name-event" type="text" [(ngModel)]="title" placeholder=" Digite o nome do evento" formControlName="nome" #nome>
+          <ng-container *ngIf="meuFormGroup.controls.nome.touched">
+            <div *ngIf="meuFormGroup.controls.nome.errors" class="alert alert-danger">
+                *Campo obrigatório
+            </div>
+        </ng-container>
+          <!-- <i class="fa-solid fa-pen-to-square"></i> -->
+        </div>
+        <div class="mb-3">
+            <label for="location-event" class="form-label">Local : </label>
+            <select class="form-select form-control" id="location-event" formControlName="local" (ngModelChange)="Select($event)">
+                <option *ngFor="let local of locals" value="{{local.local}}">{{local.local}}</option>
+              </select>
+              <ng-container *ngIf="meuFormGroup.controls.local.touched">
+                <div *ngIf="meuFormGroup.controls.local.errors" class="alert alert-danger">
+                    *Campo obrigatório
+                </div>
+            </ng-container>
+        </div>
+        <div class="bloco">
+          <div class="date-event">
+            <label for="date-event">Data : </label>
+            <input type="date" id="date-event" class="form-control form-control" [(ngModel)]="start" formControlName="date">
+            <ng-container *ngIf="meuFormGroup.controls.date.touched">
+              <span *ngIf="meuFormGroup.controls.date.errors" class="alert alert-danger">
+                  *Campo obrigatório
+              </span>
+          </ng-container>
+        </div>
+        <div class="time-event">
+            <label for="time-event">Horário ínicio : </label>
+            <input type="time" id="time-event" class="form-control form-control" formControlName="horarioInicio">
+            <ng-container *ngIf="meuFormGroup.controls.horarioInicio.touched">
+              <div *ngIf="meuFormGroup.controls.horarioInicio.errors" class="alert alert-danger">
+                  *Campo obrigatório
+              </div>
+          </ng-container>
+        </div>
+        <div class="time-event">
+          <label for="time-event">Horário final : </label>
+          <input type="time" id="time-event" class="form-control form-control" formControlName="horarioFinal">
+          <ng-container *ngIf="meuFormGroup.controls.horarioFinal.touched">
+            <div *ngIf="meuFormGroup.controls.horarioFinal.errors" class="alert alert-danger">
+                *Campo obrigatório
+            </div>
+        </ng-container>
+      </div>
+        </div>
+        <div class="mb-3">
+            <label for="email-event" class="form-label">E-mail do organizador : </label>
+            <input type="email" class="form-control form-control" id="email-event" placeholder="Digite o seu e-mail" formControlName="email">
+            <ng-container *ngIf="meuFormGroup.controls.email.touched" >
+              <div *ngIf="meuFormGroup.controls.email.errors?.required" class="alert alert-danger">
+                  *Campo obrigatório
+              </div>
+              <div *ngIf="meuFormGroup.controls.email.errors?.email" class="alert alert-danger">
+                  *E-mail inválido
+              </div>
+          </ng-container>
+          </div>
+          <div class="mb-3" *ngIf="this.local == 'Auditório'">
+            <label for="location-event" class="form-label">Quantidade de pessoas : </label>
+            <input type="number" class="form-control" id="location-event" formControlName="quantidade" min="1" max="70">
+            <ng-container *ngIf="meuFormGroup.controls.quantidade.touched">
+              <div *ngIf="meuFormGroup.controls.quantidade.errors" class="alert alert-danger">
+                *Campo obrigatório e o limite máximo é 70 pessoas
+            </div>
+          </ng-container>
+        </div>
+        <div class="mb-3"  *ngIf="this.local == 'Biblioteca'">
+          <label for="location-event" class="form-label">Quantidade de pessoas : </label>
+          <input type="number" class="form-control" id="location-event" formControlName="quantidade" min="1" max="20">
+          <ng-container *ngIf="meuFormGroup.controls.quantidade.touched">
+            <div *ngIf="meuFormGroup.controls.quantidade.errors" class="alert alert-danger">
+                *Campo obrigatório e o limite máximo é 20 pessoas
+            </div>
+        </ng-container>
+      </div>
+      <div class="mb-3"  *ngIf="this.local == 'Sala de jogos'">
+        <label for="location-event" class="form-label">Quantidade de pessoas : </label>
+        <input type="number" class="form-control" id="location-event" formControlName="quantidade" min="1" max="30">
+        <ng-container *ngIf="meuFormGroup.controls.quantidade.touched">
+            <div *ngIf="meuFormGroup.controls.quantidade.errors" class="alert alert-danger">
+                *Campo obrigatório e o limite máximo é 30 pessoas
+            </div>
+        </ng-container>
+    </div>
+    <div class="mb-3" *ngIf="this.local == 'Recepção'">
+      <label for="location-event" class="form-label">Quantidade de pessoas : </label>
+      <input type="number" class="form-control" id="location-event" formControlName="quantidade" min="1" max="50">
+      <ng-container *ngIf="meuFormGroup.controls.quantidade.touched">
+        <div *ngIf="meuFormGroup.controls.quantidade.errors" class="alert alert-danger">
+            *Campo obrigatório e o limite máximo é 50 pessoas
+        </div>
+    </ng-container>
+  </div>
+        <div class="mb-3">
+            <label for="categorie-event" class="form-label">Categoria : </label>
+            <select class="form-select form-control" id="categorie-event" formControlName="categoria">
+              <option *ngFor="let categoria of categorias" value= {{categoria.categoria}}>
+                {{categoria.categoria}}
+              </option>
+            </select>
+              <ng-container *ngIf="meuFormGroup.controls.categoria.touched">
+                <div *ngIf="meuFormGroup.controls.categoria.errors" class="alert alert-danger">
+                    *Campo obrigatório
+                </div>
+            </ng-container>
+        </div>
+        <div class="mb-3">
+          <label for="location-event" class="form-label">Descrição do evento : </label>
+          <textarea type="text" class="form-control" id="location-event" formControlName="descricao"></textarea>
+          <ng-container *ngIf="meuFormGroup.controls.descricao.touched">
+            <div *ngIf="meuFormGroup.controls.descricao.errors" class="alert alert-danger">
+                *Campo obrigatório
+            </div>
+        </ng-container>
+      </div>
+        <div class="button">
+            <button class="btn btn-primary" type="button" id="btn-form" (click)="onSubmit()" [disabled]="!meuFormGroup.valid">Salvar</button>
+          </div>
+    </form>
+  </div>

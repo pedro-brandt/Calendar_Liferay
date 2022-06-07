@@ -1,0 +1,27 @@
+.calendario {
+  width:60%;
+  margin:0px auto;
+}
+.calen{
+  margin-top: 30px;
+}
+
+@media only screen and (max-width:768px) {
+
+ .calendario{
+   width: 100%;
+   justify-content: center;
+   display: flex;
+ }
+
+}
+
+@media only screen and (max-width:600px) {
+  .calendario{
+    width: 100%;
+   justify-content: center;
+   display: flex;
+  }
+
+}
+

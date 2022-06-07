@@ -1,0 +1,60 @@
+<app-menu></app-menu>
+<div class="container-fluid">
+  <div class="container">
+    <div class="search-dv">
+      <input class="form-control" type="text" [(ngModel)]="nome" (ngModelChange)="Search()"
+        placeholder="Pesquisar evento">
+      <div class="col-3">
+        <div class="form-floating col-8">
+          <label for="floatingSelect">filtro</label>
+          <select class="form-select" id="floatingSelect" [(ngModel)]="categorySelect" (ngModelChange)="Select($event)">
+            <option *ngFor="let categoria of categorias" value={{categoria.categoria}}>
+              {{categoria.categoria}}
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-xxl cards-dv">
+    <div class="card border-primary mb-3 card-dv" *ngFor="let user of datas">
+      <div class="card-header">
+        <h3 class="card-title">{{user.nome}}</h3>
+      </div>
+      <div class="card-body">
+        <div class="dv-availability">
+          <h4 class="card-vacancy">Vagas: {{user.vagas}}/{{user.quantidade}}</h4>
+          <h5 class="category">{{user.categoria}}</h5>
+        </div>
+        <div class="dv-status" *ngIf="user.status =='Evento Disponível'">
+          <h6>{{user.status}}</h6>
+        </div>
+        <div class="dv-status-off" *ngIf="user.status =='Evento Indisponível'">
+          <h6>{{user.status}}</h6>
+        </div>
+        <div class="dv-date">
+          <span class="material-symbols-outlined">
+            calendar_month
+          </span>
+          <h4 class="card-date">{{user.data}}</h4>
+        </div>
+        <div class="dv-time">
+          <span class="material-symbols-outlined">
+            schedule
+          </span>
+          <h4 class="card-time">{{user.horarioInicio}}h às {{user.horarioFinal}}h</h4>
+        </div>
+        <div class="dv-location">
+          <span class="material-symbols-outlined">
+            pin_drop
+          </span>
+          <h4 class="card-location">Evento na {{user.local}}</h4>
+        </div>
+        <div class="dv-button">
+          <button class="btn btn-primary btn-card" [disabled]="user.status =='Evento Indisponível'"
+            (click)="goToDetalhesByState(user)">Ver detalhes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

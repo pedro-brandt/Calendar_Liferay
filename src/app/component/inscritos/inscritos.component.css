@@ -1,0 +1,167 @@
+.container-fluid {
+    width: 85%;
+    margin: 0px auto;
+    }
+
+    .btn-primary {
+        background-color: #13141d;
+    }
+
+    .aviso {
+      margin-top: 100px;
+      justify-content: center;
+      text-align: center;
+      border-radius: 1.5rem;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .aviso > h3 {
+      font-size: 22px;
+      font-family: 'Source Sans Pro', sans-serif;
+      padding:20px;
+      font-style: italic;
+    }
+    img {
+      width: 100px;
+      text-align: center;
+      align-items: center;
+      align-content: center;
+      margin: 0 auto;
+    }
+
+    .cards-dv {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .card-header{
+        min-height: 15%;
+        background-color: #0B63CE !important;
+        color: white;
+        align-items: center;
+        justify-content: center ;
+        display: flex;
+    }
+
+    .card-body{
+    min-height: 20%;
+    }
+
+    .card-dv {
+        margin: 10px;
+        width: 30%;
+        border: #0B63CE 2px solid !important;
+        border-radius: 7px !important;
+    }
+
+    .card{
+        cursor: default;
+        width: 15.6rem;
+        height: 22rem;
+        border-radius: 1.5rem;
+    }
+
+    .card-title{
+        font-size: 20px;
+        padding: 5px 0px 0px 0px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .dv-availability{
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .category{
+        background-color: #0B63CE;
+        font-size: 13px;
+        padding: 8px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .card-vacancy{
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .dv-status{
+        color: #2CBE32;
+        font-size: 14px;
+        margin-bottom: 15px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .dv-date, .dv-time,.dv-location {
+        display: flex;
+        padding:5px 0px 5px 0px;
+        align-items: center;
+    }
+
+    .card-date{
+        margin-left: 10px;
+        font-size: 16px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 50
+      }
+
+    .card-time{
+        margin-left: 10px;
+        font-size: 16px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .card-location{
+        margin-left: 10px;
+        font-size: 16px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .dv-button{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+
+    .dv-button button{
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border: none;
+        opacity: 80%;
+    }
+    .cancelar{
+
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+cursor: pointer;
+color: #13141d;
+    }

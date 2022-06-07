@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    /* background-color: #E5E5E5; */
+    margin: 0px;
+    padding: 0px;
+   }
+
+   @import "~bootstrap/dist/css/bootstrap.min.css";

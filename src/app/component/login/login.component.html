@@ -1,0 +1,32 @@
+<div class="fundo">
+    <div class="filter">
+        <div class="imagem">
+            <img src="../assets/img/Liferay_Logo_Full_Color-Digital (1).svg" alt="logo">
+        </div>
+        <div class="info">
+            <fom [formGroup]="loginForm">
+                <label>E-mail corporativo</label>
+                <input type="text" placeholder="Digite o seu e-mail" formControlName="email">
+                <div class="mensagem-erro"
+                    *ngIf="loginForm.get('email')?.errors?.required && loginForm.get('email')?.touched">
+                    *Campo obrigatório
+                </div>
+                <div class="mensagem-erro"
+                    *ngIf="loginForm.get('email')?.errors?.email && loginForm.get('email')?.touched">
+                    formato de Email inválido
+                </div>
+                <!-- <ng-container *ngIf="loginForm.controls.email.touched" >
+                    <div *ngIf="loginForm.controls.email.errors?.required" class="alert alert-danger">
+                        *Campo obrigatório
+                    </div>
+                    <div *ngIf="loginForm.controls.email.errors?.email" class="alert alert-danger">
+                        *E-mail inválido
+                    </div>
+                </ng-container> -->
+                <div class="btn">
+                    <button type="submit" (click)="fazerLogin()" [disabled]="!loginForm.valid">Entrar</button>
+                </div>
+            </fom>
+        </div>
+    </div>
+</div>
