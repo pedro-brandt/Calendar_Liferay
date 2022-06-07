@@ -1,0 +1,36 @@
+GET  http://localhost:3000/user
+
+###
+
+GET  http://localhost:3000/user/1
+
+###
+
+GET http://localhost:3000/user?title=Palestra IA
+
+###
+
+POST  http://localhost:3000/user HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Jogos"
+}
+
+###
+
+PUT  http://localhost:3000/user/2 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Jogos 1"
+}
+
+###
+
+DELETE  http://localhost:3000/user/6 HTTP/1.1
+
+###
+
+DELETE  http://localhost:3000/user/6/inscritos HTTP/1.1
+
