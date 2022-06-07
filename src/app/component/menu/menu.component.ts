@@ -1,4 +1,4 @@
-import { MatSlideToggleChange } from '@angular/material/slide-toggle';
+
 import { Component, OnInit } from "@angular/core";
 import { AuthService } from "../login/auth.service";
 
@@ -20,10 +20,5 @@ export class MenuComponent implements OnInit {
   logout() {
     this.authService.logout();
   }
-
-  // changed(evnet: MatSlideToggleChange):void {
-
-  // }
-
 
 }
