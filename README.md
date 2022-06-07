@@ -11,21 +11,22 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 `nodejs` 
 `git`
+`npm`
 `Visual Studio Code` ou qualquer outra IDE.
 
 ## 🔧 Instalação
 
-1. Abra o terminal da sua máquina e crie uma pasta usando o comando mkdir <'nome da pasta'> 
-2. dar o comando cd . <'nome da pasta'> (para entrar dentro da pasta que você criou).
-3. dar o comando git clone https://github.com/camillaUnicap/Projeto-liferay.git
+1. Abra o terminal da sua máquina e crie uma pasta usando o comando mkdir `<nome da pasta>`
+2. dar o comando `cd <nome da pasta>` (para entrar dentro da pasta que você criou).
+3. dar o comando `git clone https://github.com/camillaUnicap/Projeto-liferay.git`
 4. abra o Visual Studio Code ou qualquer IDE que você tiver na máquina.
 5. abra o projeto na IDE escolhida.
 6. abra o terminal da IDE.
-7. dar o comando cd . <nome do projeto> 
-8. dar o comando git init
-9. dar o comando npm install
-10. dar o comando npm start
-11. abra a URL indicada no final do start do projeto.
+7. dar o comando `cd projetoliferay` 
+8. dar o comando `git init`
+9. dar o comando `npm install`
+10. dar o comando `npm start`
+11. abra a URL indicada no final do build do projeto.
   
 ## 🛠️ Construído com
 
