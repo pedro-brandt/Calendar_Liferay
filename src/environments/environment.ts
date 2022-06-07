@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   // API: 'http://localhost:3000/'
-  API: 'generationevent.herokuapp.com/'
+  API: 'https://generationevent.herokuapp.com/'
 
 };
 

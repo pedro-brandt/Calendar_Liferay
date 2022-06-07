@@ -15,7 +15,6 @@ export class UserService {
 
   private readonly Api: string = `${environment.API}user`;
 
-
   list() {
     return this.http.get<User[]>(this.Api);
   }

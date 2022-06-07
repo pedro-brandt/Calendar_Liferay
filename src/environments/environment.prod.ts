@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  API: 'generationevent.herokuapp.com/'
+  API: 'https://generationevent.herokuapp.com/'
 };
