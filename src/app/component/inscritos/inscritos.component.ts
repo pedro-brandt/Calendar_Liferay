@@ -166,6 +166,7 @@ console.log(this.meuFormGroup)
 this.service.update(this.meuFormGroup.value).subscribe(
 success  => {
   this.alertService.showAlertSuccess('Cancelado com sucesso!'),
+  location.reload();
   this.router.navigate(['/inscritos']);
 
 },
