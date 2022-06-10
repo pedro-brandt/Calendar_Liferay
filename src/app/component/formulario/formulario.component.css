@@ -58,6 +58,15 @@ select {
     flex-direction: row;
 }
 
+h1 {
+  border-bottom: 1px solid #0B63CE;
+  width: 28%;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .btn {
     width: 100%;
     background-color: #0B63CE;
@@ -94,11 +103,6 @@ select {
 .form-control {
   width: 100%;
 }
-
-.btn{
-  width: 100%;
-}
-
 
 .bloco {
   display: flex;
@@ -145,10 +149,6 @@ select {
 }
 
 .form-control {
-  width: 100%;
-}
-
-.btn{
   width: 100%;
 }
 

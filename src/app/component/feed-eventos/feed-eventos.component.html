@@ -3,7 +3,10 @@
   <div class="container">
     <div class="search-dv">
       <input class="form-control" type="text" [(ngModel)]="nome" (ngModelChange)="Search()"
-        placeholder="Pesquisar evento">
+        placeholder="Pesquisar evento ">
+        <div class="input-group-append">
+          <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
+        </div>
       <div class="col-3">
         <div class="form-floating col-8">
           <label for="floatingSelect">filtro</label>

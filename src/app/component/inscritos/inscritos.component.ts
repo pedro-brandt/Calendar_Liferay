@@ -165,11 +165,11 @@ export class InscritosComponent implements OnInit {
 console.log(this.meuFormGroup)
 this.service.update(this.meuFormGroup.value).subscribe(
 success  => {
-  this.alertService.showAlertSuccess('Excluido com sucesso!'),
-  this.router.navigate(['/criados']);
+  this.alertService.showAlertSuccess('Cancelado com sucesso!'),
+  this.router.navigate(['/inscritos']);
 
 },
-error => this.alertService.showAlertDanger('Erro ao remover, tente novamente!'),
+error => this.alertService.showAlertDanger('Erro ao cancelar, tente novamente!'),
 () => console.log('update completo')
 );
 

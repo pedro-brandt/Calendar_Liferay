@@ -3,6 +3,9 @@
     /* background-color: #E5E5E5; */
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
    }
 
    @import "~bootstrap/dist/css/bootstrap.min.css";
