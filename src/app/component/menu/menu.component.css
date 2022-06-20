@@ -26,9 +26,10 @@
   }
 
   .dropdown-menu {
-    left: 15px;
-    width: 20%;
+    left: 10px !important;
+    width: 5% !important;
     border: 0.5px solid #13141d;
+    margin-left: 80px;
   }
 
   .dropdown-menu li {

@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
     var usuario = this.loginForm.getRawValue() as Login;
     this.authService.login(usuario).subscribe((response) => {
       if (!response.sucesso) {
-        this.alertService.showAlertDanger('Usuário ou senha incorretos.');
+        this.alertService.showAlertDanger('E-mail incorreto.');
       }
     })
   }
