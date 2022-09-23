@@ -119,15 +119,10 @@ transform: scale(1.1);
     font-family: 'Source Sans Pro', sans-serif;
     padding: 2px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: default;
     color: #0B63CE;
     font-weight: bold;
     transition: all 100ms cubic-bezier(0.2, 0, 0, 0.8);
-}
-
-.category:hover {
-
-  transform: scale(1.1);
 }
 
 .card-vacancy{
