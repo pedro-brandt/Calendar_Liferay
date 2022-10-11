@@ -4,7 +4,7 @@ import { DatePipe } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { UserService } from 'src/app/service/user.service';
-import { User } from 'src/models/user.model';
+import { User } from 'src/modules/models/user.model';
 import { AuthService } from '../login/auth.service';
 import { AlertModalService } from 'src/app/shared/alert-modal.service';
 import { take, switchMap } from 'rxjs/operators';

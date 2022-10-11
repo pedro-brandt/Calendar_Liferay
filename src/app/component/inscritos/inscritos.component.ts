@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/service/user.service';
 import { AlertModalService } from 'src/app/shared/alert-modal.service';
-import { User } from 'src/models/user.model';
+import { User } from 'src/modules/models/user.model';
 import { AuthService } from '../login/auth.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
 

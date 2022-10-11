@@ -4,8 +4,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/service/user.service';
 import { AlertModalService } from 'src/app/shared/alert-modal.service';
-import { Categoria } from 'src/models/categoria.model';
-import { User } from 'src/models/user.model';
+import { Categoria } from 'src/modules/models/categoria.model';
+import { User } from 'src/modules/models/user.model';
 
 @Component({
   selector: 'app-feed-eventos',

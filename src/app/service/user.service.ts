@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { User } from "../../models/user.model"
+import { User } from "../../modules/models/user.model"
 import { environment } from 'src/environments/environment';
-import { Categoria, Local} from 'src/models/categoria.model';
+import { Categoria, Local} from 'src/modules/models/categoria.model';
 import { take } from 'rxjs/operators';
 
 @Injectable({

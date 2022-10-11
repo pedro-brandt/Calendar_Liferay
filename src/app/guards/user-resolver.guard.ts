@@ -3,7 +3,7 @@ import { ThisReceiver } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Resolve, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable, of } from 'rxjs';
-import { User } from 'src/models/user.model';
+import { User } from 'src/modules/models/user.model';
 import { AuthService } from '../component/login/auth.service';
 import { UserService } from '../service/user.service';
 

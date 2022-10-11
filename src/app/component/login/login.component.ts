@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AlertModalService } from 'src/app/shared/alert-modal.service';
-import { Login } from 'src/models/login.model';
+import { Login } from 'src/modules/models/login.model';
 import { AuthService } from './auth.service';
 
 @Component({

@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { tap } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Login } from 'src/models/login.model';
+import { Login } from 'src/modules/models/login.model';
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Injectable({

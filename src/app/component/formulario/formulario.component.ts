@@ -3,8 +3,8 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { ActivatedRoute, Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
 import { UserService } from 'src/app/service/user.service';
-import { Categoria, Local } from 'src/models/categoria.model';
-import { User } from 'src/models/user.model';
+import { Categoria, Local } from 'src/modules/models/categoria.model';
+import { User } from 'src/modules/models/user.model';
 import { AlertModalService } from 'src/app/shared/alert-modal.service';
 import { map, switchMap } from 'rxjs/operators';
 
