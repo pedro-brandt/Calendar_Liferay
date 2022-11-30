@@ -13,7 +13,7 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  private readonly Api: string = `${environment.API}user`;
+  private readonly Api: string = `${environment.API}funcionario`;
 
   list() {
     return this.http.get<User[]>(this.Api);
@@ -23,46 +23,16 @@ export class UserService {
     return this.http.get<User>(`${this.Api}/${id}`).pipe(take(1));
   }
 
-  create(user) {
-    return this.http.post(this.Api, user).pipe(take(1));
+  create(funcionario) {
+    return this.http.post(this.Api, funcionario).pipe(take(1));
   }
 
-  update(user) {
-    return this.http.put(`${this.Api}/${user.id}`, user).pipe(take(1));
+  update(funcionario) {
+    return this.http.put(`${this.Api}/${funcionario.id}`, funcionario).pipe(take(1));
   }
 
   remove(id) {
     return this.http.delete(`${this.Api}/${id}`).pipe(take(1));
-  }
-
-  getCategorias() {
-    return [
-      new Categoria(0, 'selecione a categoria' ),
-     new Categoria(1, 'Stay nerdy (confras, festas, sessões de descompressão, jogos, etc)' ),
-     new Categoria(2, 'Grow and get better (workshops, meetups, mini cursos, palestras, etc)' ),
-     new Categoria(3, 'Lead by serving (comitês internos, EVP, etc)' ),
-     new Categoria(4, 'Produce excellence (company meeting, reuniões de time, retrospectiva, etc)')
-    ];
-  }
-
-  getCategory() {
-    return [
-      new Categoria(0, 'selecione a categoria' ),
-     new Categoria(1, 'Stay nerdy' ),
-     new Categoria(2, 'Grow and get better' ),
-     new Categoria(3, 'Lead by serving' ),
-     new Categoria(4, 'Produce excellence')
-    ];
-  }
-
-  getLocal() {
-    return [
-      new Local(0, 'selecione o local do evento' ),
-     new Local(1, 'Auditório' ),
-     new Local(2, 'Biblioteca' ),
-     new Local(3, 'Recepção' ),
-     new Local(4, 'Sala de jogos')
-    ];
   }
 
 }
