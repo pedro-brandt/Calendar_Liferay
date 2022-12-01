@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Event } from "../../modules/models/event.model"
+import { User } from "../../modules/models/user.model"
 import { environment } from 'src/environments/environment';
 import { Categoria, Local} from 'src/modules/models/categoria.model';
 import { take } from 'rxjs/operators';
@@ -20,15 +20,15 @@ export class UserService {
   }
 
   loadById(id){
-    return this.http.get<Event>(`${this.Api}/${id}`).pipe(take(1));
+    return this.http.get<User>(`${this.Api}/${id}`).pipe(take(1));
   }
 
   create(evento) {
     return this.http.post(this.Api, evento).pipe(take(1));
   }
 
-  update(evento) {
-    return this.http.put(`${this.Api}/${evento.id}`, evento).pipe(take(1));
+  update(user) {
+    return this.http.put(`${this.Api}/${user.id}`, user).pipe(take(1));
   }
 
   remove(id) {
