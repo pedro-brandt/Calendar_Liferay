@@ -118,7 +118,7 @@ transform: scale(1.1);
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     padding: 2px;
-    cursor: pointer;
+    cursor: default;
     border-radius: default;
     color: #0B63CE;
     font-weight: bold;
