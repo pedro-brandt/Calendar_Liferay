@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Event } from "../../modules/models/event.model"
+import { User } from "../../modules/models/event.model"
 import { environment } from 'src/environments/environment';
 import { Categoria, Local} from 'src/modules/models/categoria.model';
 import { take } from 'rxjs/operators';
