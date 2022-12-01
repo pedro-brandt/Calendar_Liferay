@@ -23,8 +23,8 @@ export class UserService {
     return this.http.get<User>(`${this.Api}/${id}`).pipe(take(1));
   }
 
-  create(evento) {
-    return this.http.post(this.Api, evento).pipe(take(1));
+  create(user) {
+    return this.http.post(this.Api, user).pipe(take(1));
   }
 
   update(user) {
